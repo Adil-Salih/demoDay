@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="firestyle.css">
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="int-firebase.js" defer></script>
+    <script src="firebase.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navDiv">
+            <ul>
+                <li> <a href="api.html"> Affirmations </a></li> 
+                <li><a href="#"> Chat Room </a></li> 
+            </ul>
+        </div> 
+    </nav>
+
+    <div id="chatbox-container">
+        <h1 id="title">Men Chatroom</h1>        
+
+        <!-- @NOTE this is where we'll append messages -->
+        <div id="all-messages">
+            <!-- @NOTE sample message -->
+            <!-- <div class="single-message">
+                <p class="single-message-username">andymina:</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloremque laboriosam dignissimos molestias ad illum odio
+                    dolor beatae dolore! Possimus laborum culpa debitis at
+                    obcaecati sit assumenda, placeat delectus reiciendis
+                    accusamus!
+                </p>
+            </div> -->
+        </div>
+        
+        <div id="typing-container">
+            <form>
+                <!-- @NOTE this input has an id #username -->
+                
+                
+                <!-- @NOTE this input has an id #message -->
+                <div class="input-container">
+                    <label>Message:</label>
+                    <input
+                        type="text"
+                        id="message"
+                    />
+             
+                </div>
+            </form>
+
+            <button id="send-btn">Send</button>
+
+           
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(204, 199, 199);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: auto;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.navDiv{
+    display: flex ;
+    align-items: center;
+   
+}
+li{
+    list-style: none;
+    display: inline;
+}
+li a{
+  color: white;
+  margin-right: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+*{
+    text-decoration: none;
+}
+#title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#chatbox-container{
+
+    background-color:#012f46;
+    height: 86vh;
+
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#all-messages{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    color: black;
+    border: 5px solid black ;
+}
+#typing-container {
+    /* size and colors */
+    width: 90%;
+    height: 10%;
+    background-color: #034668;
+    
+    /* CSS box model */
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+
+    /* flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+form {
+    /* size and colors */
+    width: 80%;
+    height: 80%;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form input {
+    width: 80%;
+    height: 80%;
+
+    font-size: 1.2em;
+    border-radius: 2px;
+}
+#send-btn {
+    width: 15%;
+    height: 50%;
+
+    background-color: #012f46;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+
+    font-size: 1.2em;
+}
+#send-btn:hover {
+    background-color: #132731;
+    box-shadow: 2px 2px 2px #4d4d4d;
+}
+
+#send-btn:active {
+    transform: scale(0.98);
+}
+
+.single-message {
+    display: flex;
+}
+
+.single-message p {
+    margin: 1%;
+}
+
+.single-message-username {
+    font-weight: 600;
+}
